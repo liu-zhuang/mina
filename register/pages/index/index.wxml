@@ -1,0 +1,182 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__hd">
+    <view class="page__title">宁国禅寺义工报名</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{msg}}</view>
+    <!-- 姓名 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="nameInput" value="{{userName}}" class="weui-input" placeholder="请输入姓名" />
+        </view>
+      </view>
+    </view>
+    <!-- 性别 -->
+    <view class="weui-cells__title">性别</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{sexyOptions}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+      </radio-group>
+    </view>
+    <!-- 年龄 -->
+    <view class="weui-cells weui-cells_after-title" style="margin-top:10px">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">年龄</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="ageInput" value="{{userAge}}" class="weui-input" placeholder="请输入年龄" />
+        </view>
+      </view>
+    </view>
+    <!-- 生日 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">生日</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="birthdayInput" value="{{userBirthday}}" class="weui-input" placeholder="请输入生日" />
+        </view>
+      </view>
+    </view>
+    <!-- 民族 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">民族</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="nationInput" value="{{userNation}}" class="weui-input" placeholder="请输入民族" />
+        </view>
+      </view>
+    </view>
+    <!-- 出生地 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">出生地</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="birthPlaceInput" value="{{userBirthPlace}}" class="weui-input" placeholder="请输入出生地" />
+        </view>
+      </view>
+    </view>
+    <!-- 文化程度 -->
+    <view class="weui-cells__title">文化程度</view>
+    <view class="weui-cells weui-cells_after-title">
+      <picker bindchange="bindCollegeChange" value="{{collegeIndex}}" range="{{collegeOptions}}">
+        <view class="weui-select">{{collegeOptions[collegeIndex]}}</view>
+      </picker>
+    </view>
+    <!-- 家人是否支持 -->
+    <view class="weui-cells weui-cells_after-title" style="margin-top:10px">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">家人是否支持
+        </view>
+        <view class="weui-cell__ft">
+          <switch bindchange="SupportChange" checked />
+        </view>
+      </view>
+    </view>
+    <!-- 是否皈依 -->
+    <view class="weui-cells weui-cells_after-title" style="margin-top:10px">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">是否皈依
+        </view>
+        <view class="weui-cell__ft">
+          <switch bindchange="BelieveChange" />
+        </view>
+      </view>
+    </view>
+    <!-- 住址 -->
+    <view class="weui-cells weui-cells_after-title" style="margin-top:10px">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">住址</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="addressInput" value="{{userAddress}}" class="weui-input" placeholder="请输入住址" />
+        </view>
+      </view>
+    </view>
+    <!-- 建康状况 -->
+    <view class="weui-cells__title">建康状况</view>
+    <view class="weui-cells weui-cells_after-title">
+      <picker bindchange="bindHealthChange" value="{{healthIndex}}" range="{{healthOptions}}">
+        <view class="weui-select">{{healthOptions[healthIndex]}}</view>
+      </picker>
+    </view>
+    <!-- 电话 -->
+    <view class="weui-cells weui-cells_after-title" style="margin-top:10px">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">电话</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="telInput" value="{{userTel}}" class="weui-input" placeholder="请输入电话" />
+        </view>
+      </view>
+    </view>
+    <!-- 微信 -->
+    <view class="weui-cells weui-cells_after-title" style="margin-top:10px">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">微信</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="wxInput" value="{{userWx}}" class="weui-input" placeholder="请输入微信号" />
+        </view>
+      </view>
+    </view>
+    <!-- 报名项目 -->
+    <view class="weui-cells__title">报名项目</view>
+    <view class="weui-cells weui-cells_after-title">
+      <checkbox-group bindchange="projectChange">
+        <label class="weui-cell weui-check__label" wx:for="{{ProjectOptions}}" wx:key="value">
+                    <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                    </view>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                </label>
+      </checkbox-group>
+    </view>
+
+    <!-- 护持时间 -->
+    <view class="weui-cells__title">护持时间</view>
+    <view class="weui-cells weui-cells_after-title">
+      <picker bindchange="bindRateChange" value="{{rateIndex}}" range="{{rateOptions}}">
+        <view class="weui-select">{{rateOptions[rateIndex]}}</view>
+      </picker>
+    </view>
+    <!-- 具体时间 -->
+    <view class="weui-cells__title">具体时间</view>
+    <view class="weui-cells weui-cells_after-title">
+      <checkbox-group bindchange="weekChange">
+        <label class="weui-cell weui-check__label" wx:for="{{weekOptions}}" wx:key="value">
+                    <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                    </view>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                </label>
+      </checkbox-group>
+    </view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+    </view>
+  </view>
+</view>

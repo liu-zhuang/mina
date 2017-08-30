@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">上海宁国禅寺 义工招募
+    </view>
+  </view>
+  <view class="page__bd">
+    <image src="/asset/logo/timg.jpeg"></image>
+    <view class="weui-article">
+      <view class="weui-article__section">
+        <view class="weui-article__p">
+          上海宁国禅寺自修建以来，逐渐受到社会广泛关注。根据寺院建设需要，现向社会长期招募义工，以扩大现有的义工团队力量。
+        </view>
+        <view class="weui-article__p">
+          古语有云“三宝门中好修福”，寺院义工团队不但可以护持三宝、护持寺院，还能为自己消除业障，培增福报，保佑阖家安康；更有意义的是义工岗位，在服务他人的同时，也能提高自身的技能水平、多掌握一门技能，在社会上也能多一个立足点，寻找工作时也能多一份选择。
+        </view>
+        <view class="weui-article__p">
+          招募义工条件：
+        </view>
+        <view class="weui-article__p">
+          1、18周岁-60周岁，具有相应民事行为能力，具有佛教正信、身体健康、无不良嗜好、男女不限。
+        </view>
+        <view class="weui-article__p">
+          2、能自觉遵守国家法律法规，遵守《上海宁国禅寺》相关规约。
+        </view>
+        <view class="weui-article__p">
+          3、具有奉献、感恩、吃苦耐劳、持之以恒的精神。
+        </view>
+        <view class="weui-article__p">
+          4、寺院举行大型法会或重大会务活动时，参与配合法师进行法会或会务现场布置，维护活动现场秩序。
+        </view>
+        <view class="weui-article__p">
+          5、有责任心、爱心、有耐心解答各种关于寺院慈善项目的咨询。
+        </view>
+        <view class="weui-article__p">
+          6、能有一定的时间来寺院发心做义工工作，能自觉服从寺院安排的义工岗位。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
