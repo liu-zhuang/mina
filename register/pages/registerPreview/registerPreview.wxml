@@ -1,0 +1,122 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__hd">
+    <view class="page__title">登记表</view>
+    <view class="page__desc">2017年宁国禅寺第二届行脚参学活动</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-form-preview">
+      <!-- 姓名 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">姓名</view>
+          <view class="weui-form-preview__value_in-hd">{{userName}}</view>
+        </view>
+      </view>
+      <!-- 法名 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">法名</view>
+          <view class="weui-form-preview__value_in-hd">{{userDharmaName}}</view>
+        </view>
+      </view>
+      <!-- 性别 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">性别</view>
+          <view class="weui-form-preview__value_in-hd">{{userSexy}}</view>
+        </view>
+      </view>
+      <!-- 年龄 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">年龄</view>
+          <view class="weui-form-preview__value_in-hd">{{userAge}}</view>
+        </view>
+      </view>
+      <!-- 民族 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">民族</view>
+          <view class="weui-form-preview__value_in-hd">{{userNation}}</view>
+        </view>
+      </view>
+      <!-- 学历 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">学历</view>
+          <view class="weui-form-preview__value_in-hd">{{userCollege}}</view>
+        </view>
+      </view>
+      <!-- 健康状况 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">健康状况</view>
+          <view class="weui-form-preview__value_in-hd">{{userHealth}}</view>
+        </view>
+      </view>
+      <!-- 身高 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">身高</view>
+          <view class="weui-form-preview__value_in-hd">{{userHeight}}</view>
+        </view>
+      </view>
+      <!-- 身份证号 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">身份证号</view>
+          <view class="weui-form-preview__value_in-hd">{{userIDNo}}</view>
+        </view>
+      </view>
+      <!-- 是否参加过行脚活动 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">是否参加过行脚活动</view>
+          <view class="weui-form-preview__value_in-hd">{{userHasJoin}}</view>
+        </view>
+      </view>
+      <!-- 家庭住址 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">家庭住址</view>
+          <view class="weui-form-preview__value_in-hd">{{userAddress}}</view>
+        </view>
+      </view>
+      <!-- 是否自愿参加 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">是否自愿参加</view>
+          <view class="weui-form-preview__value_in-hd">{{userSelf}}</view>
+        </view>
+      </view>
+      <!-- 手机号码 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">手机号码</view>
+          <view class="weui-form-preview__value_in-hd">{{userMobile}}</view>
+        </view>
+      </view>
+      <!-- 固定号码 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">固定号码</view>
+          <view class="weui-form-preview__value_in-hd">{{userTel}}</view>
+        </view>
+      </view>
+      <!-- 具体行程 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">具体行程</view>
+          <view class="weui-form-preview__value">{{userProject}}</view>
+        </view>
+      </view>
+      <!-- 随缘参加备注 -->
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">随缘参加备注</view>
+          <view class="weui-form-preview__value_in-hd">{{userRemark}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

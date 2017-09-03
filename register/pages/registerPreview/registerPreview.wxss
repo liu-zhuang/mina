@@ -22,3 +22,7 @@
 .page__title {
   text-align: center;
 }
+.page__desc {
+  font-size: 14px;
+  text-align: center;
+}

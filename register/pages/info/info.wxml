@@ -4,7 +4,9 @@
     </view>
   </view>
   <view class="page__bd">
-    <image src="/asset/logo/timg.jpeg"></image>
+    <view style="width:100%;text-align:center;">
+      <image src="/asset/logo/timg.jpeg"></image>
+    </view>
     <view class="weui-article">
       <view class="weui-article__section">
         <view class="weui-article__p">
